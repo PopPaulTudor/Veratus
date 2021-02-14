@@ -1,0 +1,100 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fab:tabMode="scrollable"
+            fab:tabIndicatorColor="@color/fun"
+            fab:tabGravity="fill"/>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floatingActionMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="@color/relax"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/ic_add_black_24dp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/schoolEventReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_study"
+            fab:fab_size="normal"
+            fab:fab_colorNormal="@color/study"
+            fab:fab_colorPressed="@color/study"
+            fab:fab_colorRipple="@color/study"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/funEventReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fun"
+            fab:fabSize="normal"
+            fab:fab_colorNormal="@color/fun"
+            fab:fab_colorPressed="@color/fun"
+            fab:fab_colorRipple="@color/fun"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/sleepEventReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_relax"
+            fab:fabSize="normal"
+            fab:fab_colorNormal="@color/relax"
+            fab:fab_colorPressed="@color/relax"
+            fab:fab_colorRipple="@color/relax"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container_create_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8dp"/>
+
+
+
+
+</RelativeLayout>

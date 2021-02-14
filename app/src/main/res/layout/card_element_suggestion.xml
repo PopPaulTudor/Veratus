@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewSuggestion"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:elevation="2dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/CardImageSuggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/ic_delete_black_24px"/>
+
+            <TextView
+                android:id="@+id/CardNameSuggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nume event"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/CardImageSuggestion" />
+
+            <View
+                android:background="@drawable/rectangle_card"
+                android:id="@+id/ColorStartSuggestion"
+                android:layout_width="174dp"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="40dp"
+                android:paddingLeft="20dp"
+                android:id="@+id/CardStartHourSuggestion"
+                android:layout_alignTop="@+id/ColorStartSuggestion"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="25dp" />
+
+            <TextView
+                android:id="@+id/CardFinishHourSuggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:text="00:00"
+                android:layout_alignBaseline="@+id/CardStartHourSuggestion"
+                android:paddingRight="23dp"
+                android:layout_alignBottom="@+id/CardStartHourSuggestion"
+                android:layout_alignParentEnd="true" />
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

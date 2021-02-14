@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/filter_nume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/filter_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/filter_nume"
+        android:layout_marginTop="60dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/filter_nota"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:hint="Grade"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/filter_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/filter_finish"
+        android:layout_alignBottom="@+id/filter_finish"
+        android:ems="10" />
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4caf50</color>
+    <color name="colorSecondary">#81c784</color>
+    <color name="colorPrimaryDark">#087f23</color>
+    <color name="colorAccent">#ae238e8a</color>
+    <color name="study">#f44336</color>
+    <color name="fun">#03a9f4</color>
+    <color name="relax">#66bb6a</color>
+    <color name="lime">#cddc39</color>
+    <color name="gry">#424242</color>
+    <color name="light_gry">#f5f5f5</color>
+    <color name="studySchedule">#d50000</color>
+    <color name="relaxSchedule">#1b5e20</color>
+    <color name="funSchedule">#59dbe0</color>
+
+</resources>

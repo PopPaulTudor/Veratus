@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_today"
+            android:icon="@drawable/ic_today"
+            android:title="@string/today"/>
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/profile"/>
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_mycalendar"
+            android:title="@string/mycalendar"/>
+
+        <item
+            android:id="@+id/nav_reward"
+            android:icon="@drawable/ic_trophy"
+            android:title="@string/reward"/>
+
+        <item
+            android:id="@+id/nav_suggestion"
+            android:icon="@drawable/ic_suggestion"
+            android:title="@string/suggestion"/>
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_question"
+            android:title="@string/about"/>
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/log_out"/>
+
+    </group>
+
+
+
+</menu>

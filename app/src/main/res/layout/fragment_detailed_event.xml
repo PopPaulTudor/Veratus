@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/edit_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorSecondary" />
+
+    <ImageView
+        android:id="@+id/typeImageDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_study48" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10sp">
+
+        <EditText
+            android:id="@+id/EventNameDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="true"
+            android:hint="Name*"
+            android:inputType="textPersonName" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="85dp">
+
+        <EditText
+            android:id="@+id/dateStartDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Day*"
+            android:inputType="date"
+            android:visibility="visible" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/ic_calendar_add" />
+
+
+    <EditText
+        android:id="@+id/timeStartDisplay"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="175dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Start hour*"
+        android:inputType="time" />
+
+
+    <EditText
+        android:id="@+id/timeFinishDisplay"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/timeStartDisplay"
+        android:layout_marginLeft="200dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Finish hour*"
+        android:inputType="time" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="170dp"
+        android:src="@drawable/ic_hour_add" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="240sp">
+
+        <EditText
+            android:id="@+id/costEventDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Cost"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="245dp"
+        android:src="@drawable/ic_cost_add" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="310sp">
+
+        <EditText
+            android:id="@+id/descriptionDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textMultiLine" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="315dp"
+        android:src="@drawable/ic_descript_add" />
+
+
+    <CheckBox
+        android:id="@+id/EventRepeatableCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="390dp"
+        android:text="Repeatable" />
+
+    <Spinner
+        android:id="@+id/EventRepeatableCreatePeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="430dp"
+        android:entries="@array/period_arrays" />
+
+
+    <Spinner
+        android:id="@+id/EventRepeatableCreateFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EventRepeatableCreatePeriod"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="50dp"
+        android:entries="@array/until_arrays" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="395dp"
+        android:src="@drawable/ic_repetable_add" />
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floatingActionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="350dp"
+        android:elevation="6dp"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="@color/colorSecondary"
+        fab:menu_colorPressed="@color/colorSecondary"
+        fab:menu_colorRipple="@color/colorSecondary"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/ic_settings_black_24px"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_showShadow="true">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/doneEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_save_black_24dp"
+            android:visibility="invisible"
+            fab:fabSize="normal"
+            fab:fab_colorNormal="@color/colorSecondary"
+            fab:fab_colorPressed="@color/colorSecondary"
+            fab:fab_colorRipple="@color/colorSecondary" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/editEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit_black_24px"
+            fab:fab_colorNormal="@color/colorSecondary"
+            fab:fab_colorPressed="@color/colorSecondary"
+            fab:fab_colorRipple="@color/colorSecondary"
+            fab:fab_size="normal" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/deleteEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_black_24px"
+            fab:fabSize="normal"
+            fab:fab_colorNormal="@color/colorSecondary"
+            fab:fab_colorPressed="@color/colorSecondary"
+            fab:fab_colorRipple="@color/colorSecondary" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</RelativeLayout>

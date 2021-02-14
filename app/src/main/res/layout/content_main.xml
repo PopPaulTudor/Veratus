@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.paul.myapp.view.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChartMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="350dp"
+        android:layout_marginTop="53dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerMain"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/message_no_events"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:text="You have nothing to do. Enjoy yourself!"
+        android:textSize="20dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft= "40dp"
+        />
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floatingActionMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="4dp"
+        android:paddingBottom="30dp"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="@color/relax"
+        fab:menu_colorPressed="@color/relax"
+        fab:menu_colorRipple="@color/relax"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/ic_add_black_24dp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/schoolEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_study"
+            fab:fab_colorNormal="@color/study"
+            fab:fab_colorPressed="@color/study"
+            fab:fab_colorRipple="@color/study"
+            fab:fab_size="normal" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/funEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fun"
+            fab:fabSize="normal"
+            fab:fab_colorNormal="@color/fun"
+            fab:fab_colorPressed="@color/fun"
+            fab:fab_colorRipple="@color/fun" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/sleepEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_relax"
+            fab:fabSize="normal"
+            fab:fab_colorNormal="@color/relax"
+            fab:fab_colorPressed="@color/relax"
+            fab:fab_colorRipple="@color/relax" />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+</RelativeLayout>

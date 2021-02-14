@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/love">
+
+    <ImageView
+        android:id="@+id/imageLogin"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/ic_logofinal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:elevation="5dp"/>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="130dp"
+        android:background="@color/colorPrimary">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="80sp">
+
+        <EditText
+            android:id="@+id/usernameLogin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:background="@color/light_gry"
+            android:hint="Username"
+            android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="150sp">
+
+        <EditText
+            android:id="@+id/passwordLogin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/usernameLogin"
+            android:layout_below="@+id/usernameLogin"
+            android:background="#f5f5f5"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/logginbutton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="290dp"
+            android:text="enter"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textureView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp">
+
+
+        <Button
+            android:id="@+id/createAccount"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/textView2"
+            android:background="@drawable/rectangle"
+            android:paddingStart="50dp"
+            android:text="Create account"
+            android:textColor="@color/gry" />
+
+        <Button
+            android:id="@+id/Anonymous"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="180dp"
+            android:text="Remain guest"
+            android:textColor="@color/gry" />
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
